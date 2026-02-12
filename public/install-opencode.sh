@@ -2,7 +2,7 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #                                                    // opencode // multi-model
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# curl -fsSL straylight.dev/opencode | sh
+# curl -fsSL straylight.dev/install-opencode.sh | sh
 #
 # phase-based installer with full rollback.
 # pure openrouter — burn gcp credits through openrouter.
@@ -282,7 +282,7 @@ main() {
       echo "  oc-gemini 'burn gcp credits'"
       echo "  oc-kimi 'bulk refactor (cheap)'"
       echo ""
-      echo "to undo: curl -fsSL straylight.dev/opencode | sh -s abort"
+      echo "to undo: curl -fsSL straylight.dev/install-opencode.sh | sh -s abort"
       ;;
     *)
       usage

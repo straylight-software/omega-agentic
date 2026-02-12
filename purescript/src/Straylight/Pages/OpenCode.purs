@@ -72,7 +72,7 @@ install =
         , inlineCode "❯ "
         , HH.code
             [ cls [ "text-text" ] ]
-            [ HH.text "curl -fsSL straylight.dev/opencode | sh" ]
+            [ HH.text "curl -fsSL straylight.dev/install-opencode.sh | sh" ]
         , blockCursor
         ]
     , HH.p
@@ -177,7 +177,7 @@ phases =
         , inlineCode "❯ "
         , HH.code
             [ cls [ "text-text" ] ]
-            [ HH.text "curl -fsSL straylight.dev/opencode | sh -s abort" ]
+            [ HH.text "curl -fsSL straylight.dev/install-opencode.sh | sh -s abort" ]
         , blockCursor
         ]
     ]
