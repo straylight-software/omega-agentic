@@ -78,10 +78,14 @@ let
       
       # Clean slate
       rm -rf ~/.config/opencode ~/.config/straylight ~/.local/state/straylight
+      rm -f ~/.bashrc
+      
+      # Create writable bashrc (not a symlink, not read-only)
+      echo "# test bashrc" > ~/.bashrc
+      chmod 644 ~/.bashrc
       
       # Set up environment for non-interactive install
       export OPENROUTER_API_KEY="test-key-fresh-install"
-
       
       # Run installer
       sh /installer.sh run
